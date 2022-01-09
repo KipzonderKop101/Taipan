@@ -1,4 +1,10 @@
 ##########################################
+# CONTSTANTS
+##########################################
+
+DIGITS = '0123456789'
+
+##########################################
 # TOKENS
 ##########################################
 
@@ -64,3 +70,12 @@ class Lexer:
 
     def make_numbers(self):
         num_str = ''
+        dot_count = 0
+
+        while self.current_char != None and self.current_char in DIGITS + '.':
+            if self.current_char == '.':
+                if dot_count == 1: break
+                dot_count += 1;
+                num_str = "."
+            else:
+                num_str = self.current_char
