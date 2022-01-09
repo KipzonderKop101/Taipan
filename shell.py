@@ -1,4 +1,4 @@
 
 while True:
-    text = input(' ASMR programming language >>>')
+    text = input(' Taipan ~ > )
     print(text)
