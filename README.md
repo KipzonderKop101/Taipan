@@ -11,8 +11,6 @@ Quick word before we start. We would like to thank you for choosing Taipan and t
 
 To people with ideas. If you have any plan on how you'd like to see the language change. Let us know! We would love to upgrade our language and making it more user friendly.
 
-# The docs
-
 As mentioned Taipan is inspired by Basic. So a lot of things will be simulair. But there is a mix of Python thrown in there, and we are working on giving it it's own 'twist'. We 
 
 Taipan knows all the letters and numbers of the English alphabet. And you can use all of those.
@@ -25,8 +23,8 @@ You need to put all of the code into a folder and than run `shell.py` with your 
 
 This will open up terminal and write `taipan ~ >` which means it is ready to go. From that point you can write your code and type enter and your code will be processed.
 
+`Taipan IDE` 
 
+The second way, and also the way we recommand you download, is by downloading the Taipan IDE. Which includes the language. This is just clicking the download button and following the set-up. 
 
-
-
-
+# The docs
