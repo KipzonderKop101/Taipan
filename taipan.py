@@ -107,19 +107,23 @@ TT_POW			= 'POW'
 TT_EQ			= 'EQ'
 TT_LPAREN   	= 'LPAREN'
 TT_RPAREN   	= 'RPAREN'
-TT_EE			= 'EE' #
-TT_NE			= 'NE' #
-TT_LT			= 'LT' #
-TT_GT			= 'GT' #
-TT_LTE			= 'LTE' #
-TT_GTE			= 'GTE' #
+TT_EE			= 'EE' 
+TT_NE			= 'NE' 
+TT_LT			= 'LT' 
+TT_GT			= 'GT' 
+TT_LTE			= 'LTE' 
+TT_GTE			= 'GTE' 
 TT_EOF			= 'EOF'
 
 KEYWORDS = [
 	'var',
-	'and', #
-	'or', #
-	'not' #
+	'and', 
+	'or', 
+	'not',
+	'if',
+	'then',
+	'elif',
+	'else' 
 ]
 
 class Token:
@@ -414,6 +418,11 @@ class Parser:
 					self.current_tok.pos_start, self.current_tok.pos_end,
 					"Expected ')'"
 				))
+
+		elif tok.matches(TT_KEYWORD, 'if'):
+			if_expr = res.register(self.if_expr())
+			if res.error: return res
+			return res.success(if_expr)
 
 		return res.failure(InvalidSyntaxError(
 			tok.pos_start, tok.pos_end,
