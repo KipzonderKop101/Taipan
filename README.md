@@ -13,6 +13,20 @@ To people with ideas. If you have any plan on how you'd like to see the language
 
 # The docs
 
+As mentioned Taipan is inspired by Basic. So a lot of things will be simulair. But there is a mix of Python thrown in there, and we are working on giving it it's own 'twist'. We 
+
+Taipan knows all the letters and numbers of the English alphabet. And you can use all of those.
+
+# Installation
+
+There are few ways to install Taipai. The first being downloading the code and running it inside of your terminal. This is not the most efficient way but for some people the source code can be needed. You are free to download the code in this rep.
+
+You need to put all of the code into a folder and than run `shell.py` with your favorite code editor.
+
+This will open up terminal and write `taipan ~ >` which means it is ready to go. From that point you can write your code and type enter and your code will be processed.
+
+
+
 
 
 
