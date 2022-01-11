@@ -202,3 +202,43 @@ Since 5 is equal to 5 **and** 7 is equal to 7
 output: 0 
 ```
 Because 7 is not equal to 4 or 3 is not equal 11. Both values are false, so it will return false.
+
+# If statements 
+
+Taipan if statemenst are mostly written on one line. But for the rest they work like you'd expect them to. If something is true, then do something. 
+
+Examples
+```
+var a = 25
+var b = if a == 25 then 20
+-----
+output: 20
+```
+This code above returns 20 because a is equal to 25. 
+
+Now let's see what happens when the if statement is not happening
+```
+var a = 25
+var b = if a == 15 then 20
+-----
+output: 
+```
+As you can see it will give no output. Because the rest of the if statement will not be read, since the if statement is not true.
+
+Let's use the it now with else
+```
+var a = 15
+var b = if a == 25 then 20 else 30
+-----
+output: 30
+```
+This code will return 30, since a is not equal to 25 it will check for the else, which returns 30
+
+Now let's use this in an actual useful code
+```
+var age = 20
+var price = if age >= 18 then 40 else 20
+-----
+output: 40
+```
+This code will check if the age is above or equal to 18, if so, the price will be 40. Otherwise it will be 20
