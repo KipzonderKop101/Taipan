@@ -42,26 +42,32 @@ As you can see there are all very easy. But we will show you some examples.
 
 ```
 5 + 5 
+-----
+output: 10
 ```
-output will be `10` 
 
 ```
 10 - 5
+-----
+output: 5
 ```
-output will be `5` 
 
 ```
 10 * 10
+-----
+output: 100
 ```
-output will be `100` 
 
 ```
 10 / 2
+-----
+output: 5
 ```
-output will be `5` 
 
 ```
 10 + 2 * 5
+-----
+output: 20
 ``` 
 output will be 20, because `*` and `/` go before `+` and `-`. So the `2 * 5` will be calculated first and than the outcome of that will be added to 10. 
 
@@ -69,6 +75,8 @@ But you can change this with `()`
 
 ```
 (10 + 2) * 5
+-----
+output: 60
 ```
 output will be 60. Since it will calculate `10 + 2` first, which is 12. And than will multiply that by 5, resulting in 60.
 
@@ -77,6 +85,8 @@ You can also use this with variables
 var a = 5
 var b = 15
 a + b
+-----
+output: 20
 ```
 output will be `20`. Since `a` holds a value of 5 and `b` of 15. And 15 + 5 = 20.
 
@@ -87,10 +97,8 @@ Variables work really easy in Taipan. The keyword for a variable is `var` and yo
 For example 
 ```
 var a = 5
-```
-Output:
-```
-5
+-----
+output: 5
 ```
 
 This will create a viarable called a with a value of 5.
@@ -102,11 +110,10 @@ That would look like this
 var a = 5
 var b = 9
 a + b
+-----
+output: 14
 ```
-output:
-```
-14
-```
+
 
 # Comperisions and logic operators
 
@@ -122,33 +129,45 @@ Taipan knows a few comperisons which will return either `1` for true or `0` for 
 for example
 ```
 1 > 2
+-----
+output: 0
 ``` 
-output `0`. Because 1 is not more than 2
+Because 1 is not more than 2
 
 ```
 1 < 2
+-----
+output: 1
 ```
-output `1`. Because 1 is less than 2
+Because 1 is less than 2
 
 ```
 2 == 2
+-----
+output: 1
 ``` 
-output `1`. Because 2 is equal to 2
+Because 2 is equal to 2
 
 ```
 3 != 3
+-----
+output: 0
 ```
-output `0`. Because 3 does equal 3
+Because 3 does equal 3 and there is not false
 
 ```
 3 >= 5
+-----
+output: 0
 ```
-output `1`. Since 3 is less or equal to 5
+Since 3 is not bigger or equal to 5
 
 ```
-2 >= 5
+2 <= 5
+-----
+output: 1
 ```
-output `0`. Since 2 is not bigger or equal to 5
+Since 2 is less or equal to 5
 
 Of course all of the comperisons can also be used with variables too.
 
@@ -157,8 +176,10 @@ var a = 5
 var b = 7
 
 a >= b
+-----
+output: 0
 ```
-output will be `0`. Since 5 (variable a) is not bigger or equal to 7 (variable b)
+Since 5 (variable a) is not bigger or equal to 7 (variable b)
 
 Logic operators work with Taipan as well. Here is a list of the Taipan support logic operators.
 
@@ -170,10 +191,14 @@ So for example
 
 ```
 5 == 5 and 7 == 7
+-----
+output: 1
 ```
-output will be `1`. Since 5 is equal to 5 **and** 7 is equal to 7
+Since 5 is equal to 5 **and** 7 is equal to 7
 
 ```
 7 == 4 or 3 == 11
+-----
+output: 0 
 ```
-output will be `0`. Because 7 is not equal to 4 or 3 is not equal 11. Both values are false, so it will return false.
+Because 7 is not equal to 4 or 3 is not equal 11. Both values are false, so it will return false.
