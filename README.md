@@ -28,3 +28,31 @@ This will open up terminal and write `taipan ~ >` which means it is ready to go.
 The second way, and also the way we recommand you download, is by downloading the Taipan IDE. Which includes the language. This is just clicking the download button and following the set-up. 
 
 # The docs
+
+Variables work really easy in Taipan. The keyword for a variable is `var` and you can give it a name and value. 
+
+For example 
+```
+var a = 5
+```
+Output:
+```
+5
+```
+
+This will create a viarable called a with a value of 5.
+
+You can create multibale variables and than add, substract, divide and multiply them with ease.
+
+That would look like this
+```
+var a = 5
+var b = 9
+a + b
+```
+output
+```
+14
+```
+
+
