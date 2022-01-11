@@ -242,3 +242,31 @@ var price = if age >= 18 then 40 else 20
 output: 40
 ```
 This code will check if the age is above or equal to 18, if so, the price will be 40. Otherwise it will be 20
+
+# For statements
+
+For statements, simply put, is a statements that keeps running until whatever condition it has is satisfied. This is also how they work inside for loops. 
+
+```
+var result = 1
+
+for i = 0 to 6 then result = result * i
+-----
+output: 120
+```
+The code above will output 120
+
+# While statements
+
+While statements will run for as long a statement is true. Meanining you can create loops.
+
+```
+var result = 5
+
+while result = 5 then 123
+-----
+output: 
+```
+There will be no output because you need to use print for this to actually work. 
+
+
