@@ -29,6 +29,59 @@ The second way, and also the way we recommand you download, is by downloading th
 
 # The docs
 
+Taipan can do easy math just as how you would calculate it on a piece of paper. It calculates the awnser fast for you and gives you a simple anwser. No printing needs to be done.
+
+Here is a list of the operators it nows 
+- `+` add two numbers to each other
+- `-` substract two numbers from each other
+- `*` multiply two numbers
+- `/` divide a number 
+- `(` or `)` to change the order it calculates in
+
+As you can see there are all very easy. But we will show you some examples.
+
+```
+5 + 5 
+```
+output will be `10` 
+
+```
+10 - 5
+```
+output will be `5` 
+
+```
+10 * 10
+```
+output will be `100` 
+
+```
+10 / 2
+```
+output will be `5` 
+
+```
+10 + 2 * 5
+``` 
+output will be 20, because `*` and `/` go before `+` and `-`. So the `2 * 5` will be calculated first and than the outcome of that will be added to 10. 
+
+But you can change this with `()` 
+
+```
+(10 + 2) * 5
+```
+output will be 60. Since it will calculate `10 + 2` first, which is 12. And than will multiply that by 5, resulting in 60.
+
+You can also use this with variables
+```
+var a = 5
+var b = 15
+a + b
+```
+output will be `20`. Since `a` holds a value of 5 and `b` of 15. And 15 + 5 = 20.
+
+# Variables
+
 Variables work really easy in Taipan. The keyword for a variable is `var` and you can give it a name and value. 
 
 For example 
@@ -50,9 +103,76 @@ var a = 5
 var b = 9
 a + b
 ```
-output
+output:
 ```
 14
 ```
 
+# Comperisions and logic operators
 
+Taipan knows a few comperisons which will return either `1` for true or `0` for false. This way you can check if a value is True or False, which you can use in if statements.
+
+- `>`  is bigger than 
+- `<`  is less than
+- `==` is equal to
+- `!=` it not equal to
+- `>=` is bigger than or equal to
+- `<=` is less than or equal to
+
+for example
+```
+1 > 2
+``` 
+output `0`. Because 1 is not more than 2
+
+```
+1 < 2
+```
+output `1`. Because 1 is less than 2
+
+```
+2 == 2
+``` 
+output `1`. Because 2 is equal to 2
+
+```
+3 != 3
+```
+output `0`. Because 3 does equal 3
+
+```
+3 >= 5
+```
+output `1`. Since 3 is less or equal to 5
+
+```
+2 >= 5
+```
+output `0`. Since 2 is not bigger or equal to 5
+
+Of course all of the comperisons can also be used with variables too.
+
+```
+var a = 5
+var b = 7
+
+a >= b
+```
+output will be `0`. Since 5 (variable a) is not bigger or equal to 7 (variable b)
+
+Logic operators work with Taipan as well. Here is a list of the Taipan support logic operators.
+
+- `and` Will return 1 (True) if **both** values are true
+- `or`  Will return 1 (True) if **one** of the values is true
+
+So for example
+
+```
+5 == 5 and 7 == 7
+```
+output will be `1`. Since 5 is equal to 5 **and** 7 is equal to 7
+
+```
+7 == 4 or 3 == 11
+```
+output will be `0`. Because 7 is not equal to 4 or 3 is not equal 11. Both values are false, so it will return false.
