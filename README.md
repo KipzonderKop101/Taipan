@@ -164,6 +164,7 @@ Logic operators work with Taipan as well. Here is a list of the Taipan support l
 
 - `and` Will return 1 (True) if **both** values are true
 - `or`  Will return 1 (True) if **one** of the values is true
+- `not` Will return 1 (True) if something is **not** true
 
 So for example
 
